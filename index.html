@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="My Bootstrap Website - a responsive website built with Bootstrap 5.">
+  <title>My Bootstrap Website</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#home">My Bootstrap Website</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-primary px-4" href="#contact">Get Started</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <header id="home" class="hero-section d-flex align-items-center">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-7 col-xl-6 text-white">
+            <span class="badge rounded-pill text-bg-light text-primary mb-3 px-3 py-2">Built with Bootstrap 5</span>
+            <h1 class="display-4 fw-bold mb-3">Welcome to<br>My Bootstrap Website</h1>
+            <p class="lead mb-4">We build modern, responsive and user-friendly websites using the power of Bootstrap. Explore our services and learn more about what we do.</p>
+            <a href="#services" class="btn btn-primary btn-lg me-2 mb-2">Get Started</a>
+            <a href="#about" class="btn btn-outline-light btn-lg mb-2">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="section-kicker">ABOUT US</span>
+            <h2 class="section-title mt-2">We Are Creative Developers</h2>
+            <p class="text-secondary">Our goal is to create beautiful and functional websites using the latest web technologies. We focus on clean code, responsive design and great user experience.</p>
+            <p class="text-secondary">Bootstrap helps us build layouts that work smoothly on phones, tablets and desktop screens.</p>
+            <a href="#contact" class="btn btn-primary px-4 mt-2">Read More</a>
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid about-image shadow-sm"
+                 src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=85"
+                 alt="Laptop and workspace for web development" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding services-section">
+      <div class="container">
+        <div class="text-center mx-auto section-heading">
+          <span class="section-kicker">OUR SERVICES</span>
+          <h2 class="section-title mt-2">What We Offer</h2>
+          <p class="text-secondary mb-0">We provide a range of services to help you build your online presence and achieve your goals.</p>
+        </div>
+        <div class="row g-4 mt-3">
+          <div class="col-sm-6 col-lg-3">
+            <div class="card service-card h-100 text-center">
+              <div class="card-body p-4">
+                <div class="service-icon icon-blue"><i class="bi bi-display"></i></div>
+                <h3 class="h5 fw-semibold">Web Development</h3>
+                <p class="text-secondary">Build responsive and modern websites using HTML, CSS, JavaScript and Bootstrap.</p>
+                <a href="#contact" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card service-card h-100 text-center">
+              <div class="card-body p-4">
+                <div class="service-icon icon-green"><i class="bi bi-brush"></i></div>
+                <h3 class="h5 fw-semibold">UI/UX Design</h3>
+                <p class="text-secondary">Create user-friendly and visually appealing interfaces for web and mobile apps.</p>
+                <a href="#contact" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card service-card h-100 text-center">
+              <div class="card-body p-4">
+                <div class="service-icon icon-purple"><i class="bi bi-gear"></i></div>
+                <h3 class="h5 fw-semibold">Customization</h3>
+                <p class="text-secondary">Tailor solutions to match your specific needs and business requirements.</p>
+                <a href="#contact" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card service-card h-100 text-center">
+              <div class="card-body p-4">
+                <div class="service-icon icon-red"><i class="bi bi-headset"></i></div>
+                <h3 class="h5 fw-semibold">Support</h3>
+                <p class="text-secondary">We are here to help you with any queries or issues you may have.</p>
+                <a href="#contact" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5">
+            <span class="section-kicker">CONTACT US</span>
+            <h2 class="section-title mt-2">Get In Touch</h2>
+            <p class="text-secondary">Have a project in mind or just want to say hello? Feel free to contact us!</p>
+            <ul class="list-unstyled contact-list mt-4">
+              <li><i class="bi bi-geo-alt-fill"></i><span>123 Web Street, Tech City, PK</span></li>
+              <li><i class="bi bi-envelope-fill"></i><a href="mailto:info@mywebsite.com">info@mywebsite.com</a></li>
+              <li><i class="bi bi-telephone-fill"></i><a href="tel:+923001234567">+92 300 1234567</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-7">
+            <form class="contact-form p-4 p-md-4" id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+                </div>
+                <div class="col-12">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input type="text" class="form-control" id="subject" name="subject" placeholder="How can we help?" required>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                  <div class="form-text mt-2">Demo form: it validates fields but does not send messages to a server.</div>
+                  <div class="alert alert-success mt-3 d-none mb-0" id="formNotice" role="status">Thank you! The demo form was submitted successfully.</div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer py-4">
+    <div class="container">
+      <div class="row align-items-center gy-3">
+        <div class="col-md-4 text-center text-md-start">
+          <a href="#home" class="footer-brand">My Bootstrap Website</a>
+          <p class="small text-light-emphasis mb-0">&copy; <span id="year">2026</span> My Bootstrap Website. All rights reserved.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="social-links d-flex justify-content-center gap-3">
+            <a href="#contact" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#contact" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#contact" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#contact" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#contact" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <ul class="footer-nav list-unstyled d-flex justify-content-center justify-content-md-end flex-wrap gap-3 mb-0">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript bundle (navbar toggler) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Front-end demo only; no backend or email delivery is configured.
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+      if (!this.checkValidity()) {
+        this.classList.add("was-validated");
+        return;
+      }
+      document.getElementById("formNotice").classList.remove("d-none");
+      this.reset();
+      this.classList.remove("was-validated");
+    });
+  </script>
+</body>
+</html>
